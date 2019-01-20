@@ -117,3 +117,55 @@ ol li
   padding: 4px 0 0 0;
   color: #FFF;} 
   
+#menubar
+{ width: 898px;
+  height: 52px;
+  padding: 0;
+  background: #000;} 
+
+ul#menu, ul#menu li
+{ float: left;
+  margin: 0; 
+  padding: 0;}
+
+ul#menu li
+{ list-style: none;}
+
+ul#menu li a
+{ letter-spacing: 0.1em;
+  font: normal 100% arial, sans-serif;
+  display: block; 
+  float: left; 
+  height: 17px;
+  margin: 10px 0 0 10px;
+  padding: 9px 26px 6px 26px;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;} 
+
+ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+{ color: #FFF;
+  background: transparent url(transparent_light.png) repeat;}
+
+#site_content
+{ width: 854px;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 0 24px 20px 20px;
+  background: #FFF;} 
+
+.sidebar
+{ float: right;
+  width: 210px;
+  padding: 0 15px 20px 15px;}
+
+.sidebar ul
+{ width: 198px; 
+  padding: 4px 0 0 0; 
+  margin: 4px 0 30px 0;}
+
+.sidebar li
+{ list-style: none; 
+  padding: 0 0 7px 0; }
