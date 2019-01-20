@@ -34,7 +34,7 @@
 	</style>
 	</head>
   <body>
-<p>UI version: 2019.20.1.5</p>
+<p>UI version: 2019.20.1.8</p>
 
 	  <div id="floating-panel">
       <input type="button" value="Buton intoarcere" onclick="goBack();"></input>
@@ -175,6 +175,25 @@ infoWindow = new google.maps.InfoWindow;
           heading: 265,
           pitch: 0
         }));
+		if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Te afli aici!!!.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser-ul nu suporta geolocatia
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
 		
 		
 		
