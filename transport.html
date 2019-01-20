@@ -140,7 +140,7 @@ infoWindow = new google.maps.InfoWindow;
             icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=bus|FFFF00',
             title: 'Bus Stop'
 		});	
-		//Bazin Olimipic/Stadion
+			//Bazin Olimipic/Stadion
 			var busMarker = new google.maps.Marker({
             position: {lat: 46.0804768, lng: 23.5648593},
             map: map,
@@ -160,5 +160,22 @@ infoWindow = new google.maps.InfoWindow;
             map: map,
             icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=bus|FFFF00',
             title: 'Bus Stop'
-		});	
+		});
+			//Piata -103
+			var busMarker = new google.maps.Marker({
+            position: {lat: 46.0763878, lng: 23.5596972},
+            map: map,
+            icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=bus|FFFF00',
+            title: 'Bus Stop'
+        });
+
+        panorama = map.getStreetView();
+        panorama.setPosition(astorPlace);
+        panorama.setPov(/** @type {google.maps.StreetViewPov} */({
+          heading: 265,
+          pitch: 0
+        }));
+		
+		
+		
 	</html>
