@@ -34,7 +34,7 @@
 	</style>
 	</head>
   <body>
-<p>UI version: 2019.20.1.9</p>
+<p>UI version: 2019.20.1.10</p>
 
 	  <div id="floating-panel">
       <input type="button" value="Buton intoarcere" onclick="goBack();"></input>
@@ -203,6 +203,17 @@
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
-		
-		
-	</html>
+		 function toggleStreetView() {
+        var toggle = panorama.getVisible();
+        if (toggle == false) {
+          panorama.setVisible(true);
+        } else {
+          panorama.setVisible(false);
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBq10xnrSG1kyDbFjMZxgYn21D2fzATOHw&callback=initMap">
+    </script>
+  </body>
+</html>
