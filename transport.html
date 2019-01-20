@@ -34,7 +34,7 @@
 	</style>
 	</head>
   <body>
-<p>UI version: 2019.20.1.4</p>
+<p>UI version: 2019.20.1.5</p>
 
 	  <div id="floating-panel">
       <input type="button" value="Buton intoarcere" onclick="goBack();"></input>
@@ -62,8 +62,34 @@
 infoWindow = new google.maps.InfoWindow;
         // punere marker pe mapa
 	
-	
-	
+	        var busMarker = new google.maps.Marker({
+		    //statie spital
+            position: {lat: 46.0741395, lng: 23.5584704},
+            map: map,
+            icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=bus|FFFF00',
+            title: 'Bus Stop'
+		});	
+			//statie Ampoi 1
+			var busMarker = new google.maps.Marker({
+            position: {lat: 46.0859939, lng: 23.585431},
+            map: map,
+            icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=bus|FFFF00',
+            title: 'Bus Stop'
+		});	
+			//statie Ambient T
+			var busMarker = new google.maps.Marker({
+            position: {lat: 46.09504, lng: 23.5955213},
+            map: map,
+            icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=bus|FFFF00',
+            title: 'Bus Stop'
+		});	
+		//statie Telekom-Alessandria T
+			var busMarker = new google.maps.Marker({
+            position: {lat: 46.0696331, lng: 23.5784299},
+            map: map,
+            icon: 'https://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=bus|FFFF00',
+            title: 'Bus Stop'
+		});	
 	
 	
 	</html>
